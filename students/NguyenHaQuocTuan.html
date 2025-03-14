@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - oti6</title>
+  <!-- Link Tailwind CSS từ CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Smooth scrolling cho các anchor */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  
+</head>
+<body class="min-h-screen flex flex-col">
+    <nav class="bg-blue-500 text-white py-3">
+        <div class="container mx-auto px-4">
+          <ul class="flex justify-center space-x-6">
+            <li><a href="./NguyenHaQuocTuan.html" class="hover:underline">Nguyễn Hà Quốc Tuấn</a></li>
+            <li><a href="./NguyenVietHung.html" class="hover:underline">Nguyễn Viết Hùng</a></li>
+            <li><a href="#member-quan" class="hover:underline">Nguyễn Minh Quân</a></li>
+          </ul>
+        </div>
+      </nav>
+  <!-- Header / Hero Section -->
+  <header class="bg-blue-600 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl font-bold">Nguyen Ha Quoc Tuan</h1>
+      <p class="text-xl mt-2">Fresher Software Engineer</p>
+      <div class="mt-4 space-x-4">
+        <span>Phone: 0931 793 967</span>
+        <span>Email: sheamus201515@gmail.com</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav class="bg-blue-500 text-white py-4">
+    <div class="container mx-auto px-4">
+      <ul class="flex justify-center space-x-6">
+        <li><a href="#about" class="hover:underline">About</a></li>
+        <li><a href="#education" class="hover:underline">Education</a></li>
+        <li><a href="#certifications" class="hover:underline">Certifications</a></li>
+        <li><a href="#awards" class="hover:underline">Awards</a></li>
+        <li><a href="#skills" class="hover:underline">Skills</a></li>
+        <li><a href="#projects" class="hover:underline">Projects</a></li>
+        <li><a href="#contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    
+    <!-- About Section -->
+    <section id="about" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-lg">
+        I am a passionate and dedicated fresher Software Engineer, ready to make an impact with innovative solutions and a strong foundation in technology. My goal is to contribute effectively to development teams and continuously learn and improve.
+      </p>
+    </section>
+    
+    <!-- Education Section -->
+    <section id="education" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">Education</h2>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-bold">Ho Chi Minh City University of Technology</h3>
+        <p class="text-gray-600 mt-2">Bachelor of Information Technology (10/2021 – 06/2025)</p>
+        <p class="text-gray-600 mt-2">GPA: 3.3 / 4</p>
+      </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section id="certifications" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">Certifications</h2>
+      <div class="bg-white rounded-lg shadow p-6">
+        <p class="text-lg">English: IELTS 7.0</p>
+      </div>
+    </section>
+    
+    <!-- Awards Section -->
+    <section id="awards" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">Awards</h2>
+      <div class="bg-white rounded-lg shadow p-6 space-y-2">
+        <p class="text-lg">Consolation Prize in HD Bank Hackathon 2024 (Project: Learning English System)</p>
+        <p class="text-lg">Consolation Prize in IT Got Talent 2024 (Project: Learning English System)</p>
+      </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">Technical Skills</h2>
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-xl font-bold mb-2">Languages</h3>
+        <p class="text-lg">Java</p>
+        <h3 class="text-xl font-bold mt-4 mb-2">Technologies</h3>
+        <p class="text-lg">SQL, MySQL, Git, GCP, Spring Boot, Spring Security, React, TailwindCSS</p>
+      </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+      
+      <!-- Ola Chat App Project -->
+      <div class="bg-white rounded-lg shadow p-6 mb-8">
+        <h3 class="text-2xl font-bold">
+          Ola Chat App <span class="text-sm text-gray-600">(11/2023 – 12/2023)</span>
+        </h3>
+        <p class="mt-2 text-gray-700">
+          A chat application using Java Core that implements a robust client-server system. Users can join the server, view online users, and initiate private conversations with text, emojis, and file transfers.
+        </p>
+        <ul class="mt-4 space-y-1 text-gray-700">
+          <li>- GitHub: <a href="https://github.com/hungadd123/OlaChatApp" class="text-blue-600 hover:underline" target="_blank">https://github.com/hungadd123/OlaChatApp</a></li>
+          <li>- Team size: 2</li>
+          <li>- Technologies: Java Core, TCP/IP, Client/Server, End-to-End encryption, Java Socket</li>
+        </ul>
+      </div>
+      
+      <!-- Learning English System (Dream Catchers) Project -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <h3 class="text-2xl font-bold">
+          Learning English System (Dream Catchers) <span class="text-sm text-gray-600">(03/2024 – 12/2024)</span>
+        </h3>
+        <p class="mt-2 text-gray-700">
+          A Learning Management System (LMS) designed for online courses and AI-powered English learning. It offers course management, chat functionality, AI essay evaluation, vocabulary flashcards, speech-to-text transcription, and pronunciation assessment.
+        </p>
+        <ul class="mt-4 space-y-1 text-gray-700">
+          <li>- GitHub: <a href="https://github.com/leviz2304/DreamCatchers" class="text-blue-600 hover:underline" target="_blank">https://github.com/leviz2304/DreamCatchers</a></li>
+          <li>- Team size: 2</li>
+          <li>- Technologies: React, Spring Boot, MySQL, OpenAI API, Google Cloud Speech-to-Text, Azure Pronunciation Assessment, Google Cloud Storage</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="mb-12">
+      <h2 class="text-3xl font-semibold mb-4">Contact</h2>
+      <div class="bg-white rounded-lg shadow p-6">
+        <p class="text-lg">Phone: 0931 793 967</p>
+        <p class="text-lg">
+          Email: <a href="mailto:sheamus201515@gmail.com" class="text-blue-600 hover:underline">sheamus201515@gmail.com</a>
+        </p>
+        <p class="text-lg">
+          GitHub: <a href="#" class="text-blue-600 hover:underline">[GitHub Profile]</a>
+        </p>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 oti6 Profile. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

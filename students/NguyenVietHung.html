@@ -1,57 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full bg-gray-100">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyen Viet Hung - Information</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Viet Hung - Information</title>
+  <!-- Tailwind CSS từ CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h1>Student Information</h1>
-        <div class="info-box">
-            <img src="../assets/images/AVATAR.jpg" alt="Profile Picture" class="profile-image">
-            <p><strong>Full Name:</strong> Nguyen Viet Hung</p>
-            <p><strong>Student ID:</strong> 2180608517</p>
-            <p><strong>Email:</strong> hungadd123@gmail.com</p>
-            <p><strong>Date of Birth:</strong> August 16, 2003</p>
-            <p><strong>Hometown:</strong> Kon Tum</p>
-            <p><strong>Skills:</strong> Java Core, Git, Spring Framework, Jira, Java Development, Java Testing, English</p>
-            <p><strong>Occupation:</strong> 4th-year student at Ho Chi Minh City University of Technology</p>
-            <p><strong>Projects:</strong></p>
-            <ul>
-                <li><strong>Ola Chatapp (11/2023 - 12/2023)</strong></li>
-                <ul>
-                    <li><strong>GitHub:</strong> <a href="https://github.com/hungadd123/OlaChatApp" target="_blank">OlaChatApp</a></li>
-                    <li><strong>Team size:</strong> 2</li>
-                    <li><strong>Technologies:</strong> Java Core, TCP/IP, Client/Server, End-to-End encryption, Java Socket</li>
-                    <li><strong>Description:</strong> A chat app using Java Core implementing a client-server system. Users can join the server, see online users, and start conversations.</li>
-                    <li><strong>Main Functions:</strong></li>
-                    <ul>
-                        <li>Client-Server Architecture: Build a robust system using Java Core.</li>
-                        <li>User Presence Management: Display real-time online users.</li>
-                        <li>Instant Chat Initiation: Enable private conversations.</li>
-                        <li>Enhanced Communication: Support text, emojis, and file transfers.</li>
-                    </ul>
-                </ul>
-                <li><strong>Learning English System (Dream Catchers) (09/2024 - 12/2024)</strong></li>
-                <ul>
-                    <li><strong>GitHub:</strong> Coming Soon</li>
-                    <li><strong>Team size:</strong> 2</li>
-                    <li><strong>Technologies:</strong> React, Spring Boot, MySQL, OpenAI API, Google Cloud Speech-to-Text, Azure Pronunciation Assessment, Google Cloud Storage</li>
-                    <li><strong>Description:</strong> A backend API for a Learning Management System (LMS) that supports online courses and AI-powered learning assistance.</li>
-                    <li><strong>Main Functions:</strong></li>
-                    <ul>
-                        <li>Course Management: Create, manage, and register for courses.</li>
-                        <li>AI-Powered Learning: Essay evaluation and vocabulary flashcards.</li>
-                        <li>Speech & Pronunciation Assessment: Speech-to-text and pronunciation evaluation.</li>
-                        <li>Cloud Storage: Store course materials on Google Cloud Storage.</li>
-                    </ul>
-                </ul>
-            </ul>
-            <p><strong>Certifications:</strong> TOEIC 920, Communication and Teamwork Certificate</p>
-            <p><strong>Awards:</strong> Consolation Prize in HD Bank Contest 2024, Consolation Prize in IT Gottalent Contest 2024</p>
-        </div>
+<body class="min-h-screen flex flex-col">
+  <!-- Navigation -->
+  <nav class="bg-blue-500 text-white py-3">
+    <div class="container mx-auto px-4">
+      <ul class="flex justify-center space-x-6">
+        <li><a href="./NguyenHaQuocTuan.html" class="hover:underline">Nguyễn Hà Quốc Tuấn</a></li>
+        <li><a href="./NguyenVietHung.html" class="hover:underline">Nguyễn Viết Hùng</a></li>
+        <li><a href="#member-quan" class="hover:underline">Nguyễn Minh Quân</a></li>
+      </ul>
     </div>
+  </nav>
+  
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-8 flex-grow">
+    <h1 class="text-3xl font-bold mb-6 text-center">Student Information</h1>
+    <div class="bg-white rounded-lg shadow p-6">
+      <div class="flex flex-col md:flex-row">
+        <!-- Profile Image -->
+        <div class="md:w-1/3 flex justify-center">
+          <img src="../assets/images/AVATAR.jpg" alt="Profile Picture" class="w-48 h-48 object-cover rounded-full">
+        </div>
+        <!-- Student Details -->
+        <div class="md:w-2/3 mt-6 md:mt-0 md:pl-8 space-y-4">
+          <p><span class="font-semibold">Full Name:</span> Nguyen Viet Hung</p>
+          <p><span class="font-semibold">Student ID:</span> 2180608517</p>
+          <p>
+            <span class="font-semibold">Email:</span>
+            <a href="mailto:hungadd123@gmail.com" class="text-blue-600 hover:underline">hungadd123@gmail.com</a>
+          </p>
+          <p><span class="font-semibold">Date of Birth:</span> August 16, 2003</p>
+          <p><span class="font-semibold">Hometown:</span> Kon Tum</p>
+          <p><span class="font-semibold">Skills:</span> Java Core, Git, Spring Framework, Jira, Java Development, Java Testing, English</p>
+          <p><span class="font-semibold">Occupation:</span> 4th-year student at Ho Chi Minh City University of Technology</p>
+        </div>
+      </div>
+      
+      <!-- Projects -->
+      <div class="mt-8">
+        <h2 class="text-2xl font-bold mb-4">Projects</h2>
+        <div class="space-y-6">
+          <!-- Ola Chatapp -->
+          <div>
+            <h3 class="text-xl font-semibold">
+              Ola Chatapp <span class="text-sm text-gray-600">(11/2023 - 12/2023)</span>
+            </h3>
+            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+              <li>
+                <span class="font-semibold">GitHub:</span>
+                <a href="https://github.com/hungadd123/OlaChatApp" target="_blank" class="text-blue-600 hover:underline">OlaChatApp</a>
+              </li>
+              <li><span class="font-semibold">Team size:</span> 2</li>
+              <li>
+                <span class="font-semibold">Technologies:</span> Java Core, TCP/IP, Client/Server, End-to-End encryption, Java Socket
+              </li>
+              <li>
+                <span class="font-semibold">Description:</span> A chat app using Java Core implementing a client-server system. Users can join the server, see online users, and start conversations.
+              </li>
+              <li>
+                <span class="font-semibold">Main Functions:</span>
+                <ul class="list-disc list-inside ml-4 mt-1">
+                  <li>Client-Server Architecture: Build a robust system using Java Core.</li>
+                  <li>User Presence Management: Display real-time online users.</li>
+                  <li>Instant Chat Initiation: Enable private conversations.</li>
+                  <li>Enhanced Communication: Support text, emojis, and file transfers.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Learning English System -->
+          <div>
+            <h3 class="text-xl font-semibold">
+              Learning English System (Dream Catchers) <span class="text-sm text-gray-600">(09/2024 - 12/2024)</span>
+            </h3>
+            <ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+              <li><span class="font-semibold">GitHub:</span> Coming Soon</li>
+              <li><span class="font-semibold">Team size:</span> 2</li>
+              <li>
+                <span class="font-semibold">Technologies:</span> React, Spring Boot, MySQL, OpenAI API, Google Cloud Speech-to-Text, Azure Pronunciation Assessment, Google Cloud Storage
+              </li>
+              <li>
+                <span class="font-semibold">Description:</span> A backend API for a Learning Management System (LMS) that supports online courses and AI-powered learning assistance.
+              </li>
+              <li>
+                <span class="font-semibold">Main Functions:</span>
+                <ul class="list-disc list-inside ml-4 mt-1">
+                  <li>Course Management: Create, manage, and register for courses.</li>
+                  <li>AI-Powered Learning: Essay evaluation and vocabulary flashcards.</li>
+                  <li>Speech & Pronunciation Assessment: Speech-to-text and pronunciation evaluation.</li>
+                  <li>Cloud Storage: Store course materials on Google Cloud Storage.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Certifications and Awards -->
+      <div class="mt-8 space-y-4">
+        <p><span class="font-semibold">Certifications:</span> TOEIC 920, Communication and Teamwork Certificate</p>
+        <p><span class="font-semibold">Awards:</span> Consolation Prize in HD Bank Contest 2024, Consolation Prize in IT Gottalent Contest 2024</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="bg-blue-500 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Nguyen Viet Hung - Information. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
