@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi" class="h-full bg-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hồ Sơ Cá Nhân - Nguyễn Minh Quân</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar chuyển đổi giữa các thành viên -->
+    <nav class="bg-blue-500 text-white py-3">
+        <div class="container mx-auto px-4">
+          <ul class="flex justify-center space-x-6">
+            <li><a href="./NguyenHaQuocTuan.html" class="hover:underline">Nguyễn Hà Quốc Tuấn</a></li>
+            <li><a href="./NguyenVietHung.html" class="hover:underline">Nguyễn Viết Hùng</a></li>
+            <li><a href="#" class="hover:underline">Nguyễn Minh Quân</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold">Nguyễn Minh Quân</h1>
+            <p class="text-xl mt-2">Sinh viên Công nghệ Thông tin</p>
+            <div class="mt-4 space-x-4">
+                <span>Email: quannguyen130895@gmail.com</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <section id="about" class="mb-12">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="flex items-center space-x-6">
+                    <img src="../assets/images/quanna.jpg" alt="Ảnh đại diện" class="w-32 h-32 rounded-full border-4 border-blue-300">
+                    <div>
+                        <p><strong>MSSV:</strong> 2180609107</p>
+                        <p><strong>Lớp:</strong> 21DTHE5</p>
+                        <p><strong>Quê quán:</strong> TP. Hồ Chí Minh</p>
+                        <p><strong>Địa chỉ:</strong> 123 Đường ABC, Quận XYZ, TP. HCM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-4">Kỹ Năng</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Java, C# (.NET), JavaScript (ReactJS)</li>
+                    <li>Spring Boot, ASP.NET Core</li>
+                    <li>SQL Server, MySQL</li>
+                    <li>Git/GitHub</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-12">
+            <h2 class="text-3xl font-semibold mb-4">Dự Án</h2>
+            <div class="bg-white rounded-lg shadow p-6">
+                <ul class="list-disc pl-6 space-y-2">
+                    <li><strong>Hệ thống quản lý rạp phim (Panda Cinemax)</strong> - Spring Boot, Thymeleaf</li>
+                    <li><strong>Game cờ tướng trực tuyến</strong> - ReactJS, ASP.NET Core, SignalR</li>
+                    <li><strong>Website bán hàng trực tuyến</strong> - ReactJS, .NET Core</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Nguyễn Minh Quân. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
