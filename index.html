@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu Nhóm Underdogs</title>
+  <!-- Link Tailwind CSS từ CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-6">
+    <div class="container mx-auto px-4">
+      <h1 class="text-3xl font-bold">Nhóm Underdogs</h1>
+      <p class="mt-2 text-lg">Nhóm học sinh trường Hutech</p>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <!-- Sử dụng flex-grow để phần này chiếm không gian còn lại, đẩy footer xuống đáy -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <!-- Giới thiệu chung -->
+    <section class="mb-8">
+      <h2 class="text-2xl font-semibold mb-4">Về chúng tôi</h2>
+      <p class="text-lg">
+        Chúng tôi là một nhóm học sinh năng động và sáng tạo đến từ trường Hutech. 
+        Với niềm đam mê công nghệ và thiết kế, chúng tôi luôn nỗ lực học hỏi và phát triển 
+        qua các dự án thú vị. Mục tiêu của nhóm là tạo ra những sản phẩm chất lượng, góp 
+        phần thay đổi tương lai.
+      </p>
+    </section>
+
+    <!-- Danh sách thành viên -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Thành viên nhóm</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="text-xl font-bold mb-2">Nguyễn Hà Quốc Tuấn</h3>
+          <p class="text-gray-600">Sinh viên ngành [Công nghệ Thông tin]</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="text-xl font-bold mb-2">Nguyễn Viết Hùng</h3>
+          <p class="text-gray-600">Sinh viên ngành [Công nghệ Thông tin]</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="text-xl font-bold mb-2">Nguyễn Minh Quân</h3>
+          <p class="text-gray-600">Sinh viên ngành [Công nghệ Thông tin]</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- Luôn nằm ở đáy khi nội dung không đủ cao -->
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Nhóm Underdogs. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
