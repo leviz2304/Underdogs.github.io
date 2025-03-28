@@ -1,83 +1,39 @@
-<!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giới thiệu Nhóm Underdogs</title>
-  <!-- Link Tailwind CSS từ CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    /* Cho phép smooth scrolling khi click vào anchor */
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
-</head>
-<body class="min-h-screen flex flex-col">
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-  <!-- Header -->
-  <header class="bg-blue-600 text-white py-6">
-    <div class="container mx-auto px-4">
-      <h1 class="text-3xl font-bold">Nhóm Underdogs</h1>
-      <p class="mt-2 text-lg">Nhóm học sinh trường Hutech</p>
-    </div>
-  </header>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-  <!-- Navbar chứa tên các thành viên -->
-  <nav class="bg-blue-500 text-white py-3">
-    <div class="container mx-auto px-4">
-      <ul class="flex justify-center space-x-6">
-        <li><a href="./students/NguyenHaQuocTuan.html" class="hover:underline">Nguyễn Hà Quốc Tuấn</a></li>
-        <li><a href="./students/NguyenVietHung.html" class="hover:underline">Nguyễn Viết Hùng</a></li>
-        <li><a href="./students/NguyenMinhQuan.html" class="hover:underline">Nguyễn Minh Quân</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Main content -->
-  <main class="flex-grow container mx-auto px-4 py-8">
-    <!-- Giới thiệu chung -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Về chúng tôi</h2>
-      <p class="text-lg">
-        Chúng tôi là một nhóm học sinh năng động và sáng tạo đến từ trường Hutech. 
-        Với niềm đam mê công nghệ và thiết kế, chúng tôi luôn nỗ lực học hỏi và phát triển 
-        qua các dự án thú vị. Mục tiêu của nhóm là tạo ra những sản phẩm chất lượng, góp 
-        phần thay đổi tương lai.
-      </p>
-    </section>
-
-    <!-- Thành viên: Nguyễn Hà Quốc Tuấn -->
-    <section id="member-tuantuan" class="mb-12">
-      <div class="bg-white rounded-lg shadow p-6">
-        <h3 class="text-xl font-bold mb-2">Nguyễn Hà Quốc Tuấn</h3>
-        <p class="text-gray-600">Sinh viên ngành Công nghệ Thông tin</p>
-      </div>
-    </section>
-
-    <!-- Thành viên: Nguyễn Viết Hùng -->
-    <section id="member-hung" class="mb-12">
-      <div class="bg-white rounded-lg shadow p-6">
-        <h3 class="text-xl font-bold mb-2">Nguyễn Viết Hùng</h3>
-        <p class="text-gray-600">Sinh viên ngành Công nghệ Thông tin</p>
-      </div>
-    </section>
-
-    <!-- Thành viên: Nguyễn Minh Quân -->
-    <section id="member-quan" class="mb-12">
-      <div class="bg-white rounded-lg shadow p-6">
-        <h3 class="text-xl font-bold mb-2">Nguyễn Minh Quân</h3>
-        <p class="text-gray-600">Sinh viên ngành Công nghệ Thông tin</p>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-blue-600 text-white py-4">
-    <div class="container mx-auto px-4 text-center">
-      <p>&copy; 2025 Nhóm Underdogs. All rights reserved.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <FORM> element to your page.             -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DQy00000OO7Fd" method="POST">
+  
+  <input type=hidden name="oid" value="00DQy00000OO7Fd">
+  <input type=hidden name="retURL" value="https://leviz2304.github.io/Underdogs.github.io/">
+  
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail"                                  -->
+  <!--  value="sheamus201515@gmail.com">                                        -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+  
+  <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+  
+  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+  
+  <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+  
+  <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+  
+  <input type="submit" name="submit">
+  
+  </form>
+  
